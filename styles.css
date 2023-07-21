@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Add more specificity to the gauge chart ID */
+#bar #gauge {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: #f7fbff;
+    padding: 20px;
+  }
+  
+  /* Style the title of the gauge chart */
+  #bar #gauge .gauge-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the number value on the gauge chart */
+  #bar #gauge .gauge-value {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkred;
+  }
+  
+  /* Style the labels on the gauge chart */
+  #bar #gauge .gauge-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Style each label text */
+  #bar #gauge .gauge-label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Style the dynamic red arrow pointer */
+  #bar #gauge .pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: darkred;
+    width: 5px;
+    height: 70px;
+    z-index: 1;
+    border-radius: 2px;
+  }
+  
+  /* Modify the gauge chart colors */
+  /* Change the colors as desired, from light green to dark green */
+  #bar #gauge .gauge-fill-0 { fill: #e0f3db; }
+  #bar #gauge .gauge-fill-1 { fill: #c0e6b4; }
+  #bar #gauge .gauge-fill-2 { fill: #9ad28a; }
+  #bar #gauge .gauge-fill-3 { fill: #74be66; }
+  #bar #gauge .gauge-fill-4 { fill: #4ea845; }
+  #bar #gauge .gauge-fill-5 { fill: #299e29; }
+  #bar #gauge .gauge-fill-6 { fill: #1a891d; }
+  #bar #gauge .gauge-fill-7 { fill: #136a16; }
+  #bar #gauge .gauge-fill-8 { fill: #0d4b0e; }
+  #bar #gauge .gauge-fill-9 { fill: #06360a; }
+  
