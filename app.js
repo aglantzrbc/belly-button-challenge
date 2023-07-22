@@ -2,14 +2,13 @@
 const jsonFile = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json";
 
 // Build function that populates the demographics box on the left side of the page
-{
+function buildInfoBox(sample) {
     // Use d3.json in order to get all of the data from the json file and then use the arrow function to pass in the data
     d3.json(jsonFile).then((data) => {
-        
         // Get all of the metadata from the json file
         let metaData = data.metadata;
 
-        // Filter based on the value of the sample (should be 1 result)
+        // Filter based on the value of the sample (should be 1 result at a time)
         let result = metaData.filter(sampleResult => sampleResult.id == sample);
 
         // Access index 0 from the array (should be 1 result)
@@ -27,21 +26,19 @@ const jsonFile = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-class
 }; // end of buildInfoBox function
 
 // Build function that creates the bar chart in the middle of the page
-function buildBarChart(sample) 
-{
-     // Use d3.json in order to get all of the data from the json file and then use the arrow function to pass in the data
+function buildBarChart(sample) {
+    // Use d3.json in order to get all of the data from the json file and then use the arrow function to pass in the data
     d3.json(jsonFile).then((data) => {
-
         // Get all of the sample data from the json file
         let sampleData = data.samples;
 
-        // Filter based on the value of sample (should be 1 result)
+        // Filter based on the value of sample (should be 1 result at a time)
         let result = sampleData.filter(sampleResult => sampleResult.id == sample);
 
         // Access index 0 from the array (should be 1 result)
         let resultData = result[0];
 
-        // Get the otu_ids, lables, and sample_values fields from the resultData
+        // Get the otu_ids, labels, and sample_values fields from the resultData
         let otu_ids = resultData.otu_ids; // otu_ids is the id of the bacteria
         let otu_labels = resultData.otu_labels; // otu_labels is the name of the bacteria
         let sample_values = resultData.sample_values; // sample_values is the amount of the bacteria present
@@ -58,39 +55,48 @@ function buildBarChart(sample)
             text: textLabels.reverse(),
             type: "bar",
             orientation: "h"
-        }; 
+        };
 
-        // Set up the layout for the bar chart with a title
+        // Set up the layout for the bar chart with a title and adjust the margin for the left side
         let layout = {
-            title: "Top 10 Belly Button Bacteria"
-        }; 
+            title: "Top 10 Belly Button Bacteria",
+            yaxis: {
+                title: "Bacteria OTU ID",
+                automargin: true, // This will enable Plotly to automatically add margin for the tick labels
+                ticklen: 10, // Adjust the value to increase or decrease the padding on the left side
+                tickfont: {
+                    size: 12 // You can adjust the font size of the y-axis tick labels
+                }
+            },
+            xaxis: {
+                title: "Sample Volume"
+            }
+        };
 
-        // Call Plotly to plot the bar chart on the page 
-        Plotly.newPlot("bar", [barChart], layout)
+        // Call Plotly to plot the bar chart on the page
+        Plotly.newPlot("bar", [barChart], layout);
     });
 }; // end of buildBarChart function
 
-// Build funtion that creates the bubble chart on the bottom of the page
-function buildBubbleChart(sample) 
-{
-     // Use d3.json in order to get all of the data from the json file and then use the arrow function to pass in the data
-     d3.json(jsonFile).then((data) => {
-
-        // Get all of the sample data from the json file 
+// Build function that creates the bubble chart on the bottom of the page
+function buildBubbleChart(sample) {
+    // Use d3.json in order to get all of the data from the json file and then use the arrow function to pass in the data
+    d3.json(jsonFile).then((data) => {
+        // Get all of the sample data from the json file
         let sampleData = data.samples;
 
-        // Filter based on the value of sample (should be 1 result) 
+        // Filter based on the value of sample (should be 1 result at a time)
         let result = sampleData.filter(sampleResult => sampleResult.id == sample);
 
         // Access index 0 from the array (should be 1 result)
         let resultData = result[0];
 
-        // Get the otu_ids, lables, and sample_values fields from the resultData 
+        // Get the otu_ids, labels, and sample_values fields from the resultData
         let otu_ids = resultData.otu_ids; // otu_ids is the id of the bacteria
         let otu_labels = resultData.otu_labels; // otu_labels is the name of the bacteria
         let sample_values = resultData.sample_values; // sample_values is the amount of the bacteria present
 
-        // Set up the bubble chart using the Plotly library 
+        // Set up the bubble chart using the Plotly library
         let bubbleChart = {
             y: sample_values,
             x: otu_ids,
@@ -101,31 +107,29 @@ function buildBubbleChart(sample)
                 color: otu_ids,
                 colorscale: "Earth"
             }
-        }; 
+        };
 
         // Set up the layout for the bubble chart with a title and axis labels
         let layout = {
             title: "Bacteria Cultures Per Sample",
             hovermode: "closest",
-            xaxis: {title: "OTU ID (Microbial Species Identification Number)"},
-            yaxis: {title: "Amount Present in Culture"}
+            xaxis: { title: "Bacteria OTU ID (operational taxonomic units identification number)" },
+            yaxis: { title: "Amount Present in Culture" }
         };
 
-        // Call Plotly to plot the bubble chart on the page 
-        Plotly.newPlot("bubble", [bubbleChart], layout) 
+        // Call Plotly to plot the bubble chart on the page
+        Plotly.newPlot("bubble", [bubbleChart], layout);
     });
 }; // end of buildBubbleChart function
 
 // Build function that creates the gauge chart on the right side of the page
-function buildGaugeChart(sample)
-{
+function buildGaugeChart(sample) {
     // Use d3.json in order to get all of the data from the json file and then use the arrow function to pass in the data
     d3.json(jsonFile).then((data) => {
-
-        // Get all of the metadata from the json file 
+        // Get all of the metadata from the json file
         let metaData = data.metadata;
 
-        // Filter based on the value of the sample (should be 1 result) 
+        // Filter based on the value of the sample (should be 1 result at a time)
         let result = metaData.filter(sampleResult => sampleResult.id == sample);
 
         // Access index 0 from the array (should be 1 result)
@@ -136,7 +140,7 @@ function buildGaugeChart(sample)
 
         // Calculate the degrees for the dial pointer based on the washing frequency
         let degrees = 180 - (washFrequency * 20), // Adjust the multiplier based on your data range
-            radius = .6;
+            radius = 0.6;
         let radians = degrees * Math.PI / 180;
         let x = radius * Math.cos(radians);
         let y = radius * Math.sin(radians);
@@ -159,16 +163,16 @@ function buildGaugeChart(sample)
                 }
             }],
             title: '<b>Belly Button Washing Frequency</b> <br> Scrubs per Week',
-            xaxis: {zeroline: false, showticklabels: false, showgrid: false, range: [-1, 1]},
-            yaxis: {zeroline: false, showticklabels: false, showgrid: false, range: [-1, 1]}
+            xaxis: { zeroline: false, showticklabels: false, showgrid: false, range: [-1, 1] },
+            yaxis: { zeroline: false, showticklabels: false, showgrid: false, range: [-1, 1] }
         };
-        
+
         // Set up the data for the gauge chart
-        let gaugeData = [{ 
+        let gaugeData = [{
             type: 'scatter',
-            x: [0], 
+            x: [0],
             y: [0],
-            marker: {size: 12, color: 'red'},
+            marker: { size: 12, color: 'red' },
             showlegend: false,
             name: 'Freq',
             text: washFrequency,
@@ -188,7 +192,7 @@ function buildGaugeChart(sample)
             },
             labels: ['8-9', '7-8', '6-7', '5-6', '4-5', '3-4', '2-3', '1-2', '0-1'],
             hoverinfo: 'label',
-            hole: .5,
+            hole: 0.5,
             type: 'pie',
             showlegend: false
         }]; // end of gaugeData
@@ -198,10 +202,8 @@ function buildGaugeChart(sample)
     });
 }; // end of buildGaugeChart function
 
-
 // Build function that initializes the dashboard at start up with the first sample
-function initialize()
-{
+function initialize() {
     // Access the dropdown selector from the index.html file and assign it to a variable
     var select = d3.select("#selDataset");
 
@@ -227,13 +229,12 @@ function initialize()
 
         // Call the function to build the initial gauge chart on the right side of the page
         buildGaugeChart(sample1);
-    }); // end of d3.json     
+    }); // end of d3.json
 };
 
 // Build function that updates the dashboard when a new sample is selected from the drop-down selector
-function optionChanged(item)
-{
-     // Call the function to build the demographics box on the left side of the page
+function optionChanged(item) {
+    // Call the function to build the demographics box on the left side of the page
     buildInfoBox(item);
 
     // Call the function to build the bar chart in the middle of the page
@@ -248,3 +249,4 @@ function optionChanged(item)
 
 // Call the initialize function to start the dashboard
 initialize(); // end of initialize function
+
