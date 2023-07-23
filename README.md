@@ -43,27 +43,11 @@ As an optional item, a gauge was created with a pointer indicating the binned wa
 
 **Figure 4** | *Gauge of binned washing frequency from each sample's metadata*
 
-- [Task 3: Exploratory Analysis](https://courses.bootcampspot.com/courses/3337/assignments/54004?module_item_id=961459)
-
 In addition to being able to scroll over the bars and bubbles to get microbe data, the dashboard is interactive in the sense that whenever the user selects a new sample individual's number from the dropdown menu, the entire dashboard updates with that person's information. See **Figure 5** for some of the JavaScript code that makes this possible.
 
 ![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/ba96056f-4972-4e69-bb6a-46697148047b)
 
 **Figure 5** | *Gauge of binned washing frequency from each sample's metadata*
-   
-2. *Which establishments in London have a `RatingValue` greater than or equal to 4?* (Note - the numeric part of the `RatingValue` scale has a 1-5 range, with higher values better than lower values, so these venues received a positive evaluation from the Food Standards Agency.) **Answer: 33 establishments**.
-
-3. *What are the top 5 establishments with a `RatingValue` score of 5, sorted by `hygiene` score from lowest to highest, nearest to the new London restaurant just added,* "Penang Flavours"? Nearness was defined as within 0.01 degree of `latitude` and `longitude`, approximately 1.11 km / 0.689722 miles. As one ilustration, the closest establishment to *Penang Flavours* with the lowest `RatingValue` (i.e., 0 in this case) is a bar/pub/nightclub called *Volunteer*. See **Table 1**.
-
-![image](https://github.com/aglantzrbc/nosql-challenge/assets/127694342/83147dca-f18c-433e-b6d6-a74a450438e2)
-
-**Table 1** | *Jupyter Notebook output showing part of a Pandas DataFrame of the top 5 establishments with a `RatingValue` score of 5, sorted by `hygiene` score from lowest to highest, nearest to the new London restaurant,* "Penang Flavours"
-
-4. *How many establishments in each Local Authority area have a `hygiene` score of 0?* An aggregation pipeline was used to find the answer, with records *matched* on a `hygiene` score of 0, *grouped* by Local Authority, and the output "*sorted* in descending order. **Answer: 55 establishments**. The DataFrame was normalized to "flatten" or "tidy" nested keys before being printed. See **Table 2**.
-
-![image](https://github.com/aglantzrbc/nosql-challenge/assets/127694342/4b8b5fdf-2f34-4f76-989a-2df92f628071)
-
-**Table 2** | *Jupyter Notebook output showing the final DataFrame of the top 10 establishments in each Local Authority area, in descending count order, that have a `hygiene` score of 0, after normalization*
 
 ### 2. INSTALLATION
 
