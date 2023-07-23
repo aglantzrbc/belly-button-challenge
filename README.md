@@ -27,7 +27,7 @@ The HTML file creates a **dropdown menu** of OTU IDs. Using the [d3](https://d3j
 
 **Figure 1** | *HTML dropdown menu and JavaScript metadata box of demographic information key pairs*
 
-Calling the [Plotly](https://plotly.com/javascript/) library, which is built on top of the d3 library and also made available through the HTML code, a **bar chart** (**Figure 2**) and a **bubble chart** (**Figure 3**) were constructed, each showing the top ten microbes by volume. Mousing over each bar and each bubble gives access to the OTU information associated with each sample individual's microbes
+Calling the [Plotly](https://plotly.com/javascript/) library, which is built on top of the d3 library and also made available through the HTML code, a **bar chart** (**Figure 2**) and a **bubble chart** (**Figure 3**) were constructed, each showing the top ten microbes by volume. Mousing over each bar and each bubble gives access to the OTU information associated with each sample individual's microbes.
 
 ![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/f5f923ee-2e60-494c-8d8c-451bd2bb3e13)
 
