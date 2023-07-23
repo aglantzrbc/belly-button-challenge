@@ -70,6 +70,10 @@ The author also consulted code and results from similar projects publicly access
 - [Stegall-Rodriguez, Sarah](https://www.linkedin.com/in/sarsteg/): Brownsville, Texas, USA, June 2023. [nosql-challenge](https://github.com/sarsteg/nosql-challenge)
 - [Wang, Yeyan](https://www.linkedin.com/in/yeyan-wang/): Seattle, Washington, USA, March 2023. [nosql-challenge](https://github.com/yeyanwang/nosql-challenge)
 
+The experimental data for this assignment ultimately derives from this study:
+
+- Jiri Hulcr,Andrew M. Latimer,Jessica B. Henley,Nina R. Rountree,Noah Fierer,Andrea Lucky,Margaret D. Lowman,Robert R. Dunn: _PLOS One_ 7(11) e47712, San Francisco, California, USA, November 2012. [A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712)
+
 
 ### 5. LICENSES
 
