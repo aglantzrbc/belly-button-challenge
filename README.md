@@ -6,10 +6,6 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 14 Belly Butt
 ## TABLE OF CONTENTS
 
 1. Project Description
-   - Task 1: Create Bar Plot
-   - Task 2: Create Bubble Plot
-   - Task 3: Create Interactive Metadata display
-   - Task 4: Create Gauge Feature
 2. Installation
 3. Contributing
 4. Acknowledgements
@@ -27,15 +23,11 @@ The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for t
 
 **CSS FILE:** styles.css
 
-- [Task 1: Create Bar Plot](https://courses.bootcampspot.com/courses/3337/assignments/54004?module_item_id=961459)
+The HTML file creates a dropdown menu of OTU IDs. The JavaScript file gives the dropdown access to the json data in the source file: _"https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time an OTU ID is selected via the dropdown menu, metadata associated with it populates a box of demographic information key pairs right underneath. See **Figure 1**.
 
-**FILE:** NoSQL_setup_1-2.ipynb
+![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/6c68dcb4-2eba-42dc-ba83-8cc626140436)
 
-The author installed the necessary Python libraries (including PyMongo). A connection was established to a MongoDB server using the PyMongo library; MongoDB was allowed to run on its default port 27017. The database containing a .json collection was imported into MongoDB using this code in Git Bash when in the vicinity of the file: **_mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json_**. See **Figure 1** for an illustration. Proof of the success of the import of the database and its collection are shown in **Figure 2**.
-
-![image](https://github.com/aglantzrbc/nosql-challenge/assets/127694342/14531a75-7b34-423c-9f4d-dc92cee17854)
-
-**Figure 1** | *Git code pulling the database* uk_food *with the collection* establishments.json *into MongoDB, making sure any preexisting .json file with that name is deleted first*
+**Figure 1** | *HTML dropdown menu and JavaScript metadata box of demographic information key pairs*
 
 ![image](https://github.com/aglantzrbc/nosql-challenge/assets/127694342/9b58541e-27bd-4cfa-b921-ef1cf8951260)
 
