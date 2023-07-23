@@ -45,11 +45,11 @@ As an optional item, a gauge was created with a pointer indicating the binned wa
 
 - [Task 3: Exploratory Analysis](https://courses.bootcampspot.com/courses/3337/assignments/54004?module_item_id=961459)
 
-**FILE:** NoSQL_analysis_3.ipynb
+In addition to being able to scroll over the bars and bubbles to get microbe data, the dashboard is interactive in the sense that whenever the user selects a new sample individual's number from the dropdown menu, the entire dashboard updates with that person's information. See **Figure 5** for some of the JavaScript code that makes this possible.
 
-The scenario for Task 3 is to help the editors of the *Eat Safe, Love* magazine answer specific questions from the current data, which will putatively help them find the locations they wish to visit and avoid. After making sure the new NoSQL_analysis_3.ipynb coding file has the same important features as the previous coding file (e.g., installed libraries), the following questions were posed and answered, with sample output converted to [Pandas](https://en.wikipedia.org/wiki/Pandas_(software)) DataFrames:
+![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/ba96056f-4972-4e69-bb6a-46697148047b)
 
-1. *Which establishments have a `hygiene` score equal to 20?* (Note - the lower the `hygiene` score, the better an establishment's cleanliness, so these are relatively unhygienic venues.) **Answer: 41 establishments**.
+**Figure 5** | *Gauge of binned washing frequency from each sample's metadata*
    
 2. *Which establishments in London have a `RatingValue` greater than or equal to 4?* (Note - the numeric part of the `RatingValue` scale has a 1-5 range, with higher values better than lower values, so these venues received a positive evaluation from the Food Standards Agency.) **Answer: 33 establishments**.
 
