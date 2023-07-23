@@ -37,11 +37,11 @@ Calling the [Plotly](https://plotly.com/javascript/) library, which is built on 
 
 **Figure 3** | *Bubble chart of each sample's microbes*
 
-Using the same file from Task 1, a record for a fictional new halal (presumably: Malaysian) restaurant in Greenwich, UK, *Penang Flavours*, was inserted into the collection and manipulated. Establishments from the Dover Local Authority were identified (count = 994) and deleted. `RatingValue` and the coordinates `latitude` and `longitude` were coerced from strings to numbers and non-numeric `RatingValue` data (e.g., "Pass") were nullified, all in prerparation for Task 3. See **Figure 3** for the outcome of this last process.
+As an optional item, a gauge was created with a pointer indicating the binned wash frequency from the metadata of the sample. This is illustrated in **Figure 4**.
 
-![image](https://github.com/aglantzrbc/nosql-challenge/assets/127694342/80570701-f4b2-4b48-a94f-65423f399484)
+![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/a25f4b02-a8ed-4cae-9ccf-d5f6ca33278d)
 
-**Figure 3** | *Jupyter Notebook output showing the coercion of strings into numbers for useful key values*
+**Figure 4** | *Gauge of binned washing frequency from each sample's metadata*
 
 - [Task 3: Exploratory Analysis](https://courses.bootcampspot.com/courses/3337/assignments/54004?module_item_id=961459)
 
