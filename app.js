@@ -8,7 +8,7 @@ function buildInfoBox(sample) {
         // Get all of the metadata from the json file
         let metaData = data.metadata;
 
-        // Filter based on the value of the sample (should be 1 result at a time)
+        // Filter based on the value of the sample (should be 1 result)
         let result = metaData.filter(sampleResult => sampleResult.id == sample);
 
         // Access index 0 from the array (should be 1 result)
@@ -32,7 +32,7 @@ function buildBarChart(sample) {
         // Get all of the sample data from the json file
         let sampleData = data.samples;
 
-        // Filter based on the value of sample (should be 1 result at a time)
+        // Filter based on the value of sample (should be 1 result)
         let result = sampleData.filter(sampleResult => sampleResult.id == sample);
 
         // Access index 0 from the array (should be 1 result)
@@ -61,7 +61,7 @@ function buildBarChart(sample) {
         let layout = {
             title: "Top 10 Belly Button Bacteria",
             yaxis: {
-                title: "Bacteria OTU ID",
+                title: "Bacteria",
                 automargin: true, // This will enable Plotly to automatically add margin for the tick labels
                 ticklen: 10, // Adjust the value to increase or decrease the padding on the left side
                 tickfont: {
@@ -69,7 +69,7 @@ function buildBarChart(sample) {
                 }
             },
             xaxis: {
-                title: "Sample Volume"
+                title: "Sample Values"
             }
         };
 
@@ -85,7 +85,7 @@ function buildBubbleChart(sample) {
         // Get all of the sample data from the json file
         let sampleData = data.samples;
 
-        // Filter based on the value of sample (should be 1 result at a time)
+        // Filter based on the value of sample (should be 1 result)
         let result = sampleData.filter(sampleResult => sampleResult.id == sample);
 
         // Access index 0 from the array (should be 1 result)
@@ -113,7 +113,7 @@ function buildBubbleChart(sample) {
         let layout = {
             title: "Bacteria Cultures Per Sample",
             hovermode: "closest",
-            xaxis: { title: "Bacteria OTU ID (operational taxonomic units identification number)" },
+            xaxis: { title: "OTU ID (Microbial Species Identification Number)" },
             yaxis: { title: "Amount Present in Culture" }
         };
 
@@ -129,7 +129,7 @@ function buildGaugeChart(sample) {
         // Get all of the metadata from the json file
         let metaData = data.metadata;
 
-        // Filter based on the value of the sample (should be 1 result at a time)
+        // Filter based on the value of the sample (should be 1 result)
         let result = metaData.filter(sampleResult => sampleResult.id == sample);
 
         // Access index 0 from the array (should be 1 result)
@@ -249,4 +249,3 @@ function optionChanged(item) {
 
 // Call the initialize function to start the dashboard
 initialize(); // end of initialize function
-
