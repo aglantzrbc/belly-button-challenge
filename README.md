@@ -17,9 +17,15 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 14 Belly Butt
 
 ### 1. PROJECT DESCRIPTION
 
-This [project](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) is designed to assess student skills using [JavaScript](https://www.javascript.com/) alongside other web language to construct an interactive dashboard. The project is based upon a study of the microbes that colonize the human navel. The original study materials are available [here](https://robdunnlab.com/projects/belly-button-biodiversity/) and [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712), and the citation is at the end of this README file. The study's dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs) were present in more than 70% of people, while the rest were relatively rare. *Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle*, though with two similar coding files for different parts of the same project, there were inevitably some redundancies.
+This [project](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) is designed to assess student skills using [JavaScript](https://www.javascript.com/) alongside other web language to construct an interactive dashboard. The project is based upon a study of the microbes that colonize the human navel. The original study materials are available [here](https://robdunnlab.com/projects/belly-button-biodiversity/) and [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712), and the citation is at the end of this README file. The study's dataset reveals that a small handful of microbial species (also called _operational taxonomic units_, or OTUs) were present in more than 70% of people, while the rest were relatively rare. *Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle*.
 
-- [Task 1: Database and Jupyter Notebook Set Up](https://courses.bootcampspot.com/courses/3337/assignments/54004?module_item_id=961459)
+The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for the dashboard, the JavaScript file provides interactivity, and the [CSS](https://en.wikipedia.org/wiki/CSS) file provides the styling for the gauge element of the dashboard. The legend of files is as follows:
+
+**HTML FILE:** index.html
+**JAVASCRIPT FILE:** app.js
+**CSS FILE:** styles.css
+
+- [Task 1: Create Bar Plot](https://courses.bootcampspot.com/courses/3337/assignments/54004?module_item_id=961459)
 
 **FILE:** NoSQL_setup_1-2.ipynb
 
