@@ -21,9 +21,9 @@ This [project](https://courses.bootcampspot.com/courses/3337/assignments/54006?m
 
 The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for the dashboard, the JavaScript file provides interactivity, and the [CSS](https://en.wikipedia.org/wiki/CSS) file provides the styling for the gauge element of the dashboard. The legend of files is as follows:
 
-- **HTML FILE:** index.html
-- - **JAVASCRIPT FILE:** app.js
-- **CSS FILE:** styles.css
+   - **HTML FILE:** index.html
+   - **JAVASCRIPT FILE:** app.js
+   -  **CSS FILE:** styles.css
 
 - [Task 1: Create Bar Plot](https://courses.bootcampspot.com/courses/3337/assignments/54004?module_item_id=961459)
 
