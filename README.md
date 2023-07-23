@@ -15,27 +15,27 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 14 Belly Butt
 
 This [project](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) is designed to assess student skills using [JavaScript](https://www.javascript.com/) alongside other web language to construct an interactive dashboard. The project is based upon a study of the microbes that colonize the human navel. The original study materials are available [here](https://robdunnlab.com/projects/belly-button-biodiversity/) and [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712), and the citation is at the end of this README file. The study's dataset reveals that a small handful of microbial species (also called _operational taxonomic units_, or OTUs) were present in more than 70% of people, while the rest were relatively rare. *Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle*.
 
-The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for the dashboard, the JavaScript file provides interactivity, and the [CSS](https://en.wikipedia.org/wiki/CSS) file provides the styling for the gauge element of the dashboard. The legend of files is as follows:
+The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for the dashboard and the JavaScript file provides interactivity. The legend of files is as follows:
 
 **HTML FILE:** index.html
 
 **JAVASCRIPT FILE:** app.js
 
-**CSS FILE:** styles.css
-
-The HTML file creates a dropdown menu of OTU IDs. The JavaScript file gives the dropdown access to the json data in the source file: _"https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time an OTU ID is selected via the dropdown menu, metadata associated with it populates a box of demographic information key pairs right underneath. See **Figure 1**.
+The HTML file creates a dropdown menu of OTU IDs. Using the [d3](https://d3js.org/) library accessed in the HTML, the JavaScript file gives the dropdown access to the json data in the source file: _"https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time a sample individual is selected by number via the dropdown menu, metadata associated with it populates a box of demographic information key pairs right underneath. See **Figure 1**.
 
 ![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/6c68dcb4-2eba-42dc-ba83-8cc626140436)
 
 **Figure 1** | *HTML dropdown menu and JavaScript metadata box of demographic information key pairs*
 
-![image](https://github.com/aglantzrbc/nosql-challenge/assets/127694342/9b58541e-27bd-4cfa-b921-ef1cf8951260)
+Calling the [Plotly](https://plotly.com/javascript/) library, which is built on top of the d3 library and also made available through the HTML code, a bar chart (**Figure 2**) and a bubble chart (**Figure 3**) were constructed. Mousing over each bar and each bubble gives access to the OTU information associated with each sample's microbes
 
-**Figure 2** | *A MongoDBCompass GUI app screen capture showing the existence of the database and its collection in MongoDB*
+![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/f5f923ee-2e60-494c-8d8c-451bd2bb3e13)
 
-- [Task 2: Update the Database](https://courses.bootcampspot.com/courses/3337/assignments/54004?module_item_id=961459)
+**Figure 2** | *Bar chart of each sample's microbes*
 
-**FILE:** NoSQL_setup_1-2.ipynb
+![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/a40bdaa0-c452-4f2c-a446-055f6b70a7af)
+
+**Figure 3** | *Bubble chart of each sample's microbes*
 
 Using the same file from Task 1, a record for a fictional new halal (presumably: Malaysian) restaurant in Greenwich, UK, *Penang Flavours*, was inserted into the collection and manipulated. Establishments from the Dover Local Authority were identified (count = 994) and deleted. `RatingValue` and the coordinates `latitude` and `longitude` were coerced from strings to numbers and non-numeric `RatingValue` data (e.g., "Pass") were nullified, all in prerparation for Task 3. See **Figure 3** for the outcome of this last process.
 
