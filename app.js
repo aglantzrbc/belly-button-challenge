@@ -44,15 +44,15 @@ function buildBarChart(sample) {
         let sample_values = resultData.sample_values; // sample_values is the amount of the bacteria present
 
         // Set the top 10 items to display on the bar chart
-        let yticks = otu_ids.slice(0, 10).map(id => `OTU ${id}`); // map the otu_ids to the yticks
+        let yTicks = otu_ids.slice(0, 10).map(id => `OTU ${id}`); // map the otu_ids to the yTicks
         let xValues = sample_values.slice(0, 10); // set the xValues to the sample_values
         let textLabels = otu_labels.slice(0, 10); // set the textLabels to the otu_labels
 
         // Set up the bar chart using the Plotly library with orientation set to horizontal
         let barChart = {
-            y: yticks.reverse(),
+            y: yTicks.reverse(),
             x: xValues.reverse(),
-            text: textLabels.reverse(),
+            text: textLabels.reverse(), // Here, otu_labels is used for the hover text
             type: "bar",
             orientation: "h"
         };
@@ -61,15 +61,15 @@ function buildBarChart(sample) {
         let layout = {
             title: "Top 10 Belly Button Bacteria",
             yaxis: {
-                title: "Bacteria",
-                automargin: true, // This will enable Plotly to automatically add margin for the tick labels
-                ticklen: 10, // Adjust the value to increase or decrease the padding on the left side
+                title: "Bacteria OTU ID",
+                automargin: true, 
+                ticklen: 10, 
                 tickfont: {
-                    size: 12 // You can adjust the font size of the y-axis tick labels
+                    size: 12 
                 }
             },
             xaxis: {
-                title: "Sample Values"
+                title: "Sample Volume"
             }
         };
 
@@ -100,7 +100,7 @@ function buildBubbleChart(sample) {
         let bubbleChart = {
             y: sample_values,
             x: otu_ids,
-            text: otu_labels,
+            text: otu_labels, // Here, otu_labels is used for the hover text
             mode: "markers",
             marker: {
                 size: sample_values,
@@ -113,7 +113,7 @@ function buildBubbleChart(sample) {
         let layout = {
             title: "Bacteria Cultures Per Sample",
             hovermode: "closest",
-            xaxis: { title: "OTU ID (Microbial Species Identification Number)" },
+            xaxis: { title: "OTU ID (Operational Taxonomic Unit Identifier)" },
             yaxis: { title: "Amount Present in Culture" }
         };
 
@@ -139,7 +139,7 @@ function buildGaugeChart(sample) {
         let washFrequency = Object.values(resultData)[6];
 
         // Calculate the degrees for the dial pointer based on the washing frequency
-        let degrees = 180 - (washFrequency * 20), // Adjust the multiplier based on your data range
+        let degrees = 180 - (washFrequency * 20), // Adjust the multiplier based on the data range
             radius = 0.6;
         let radians = degrees * Math.PI / 180;
         let x = radius * Math.cos(radians);
@@ -181,7 +181,7 @@ function buildGaugeChart(sample) {
         {
             values: [50 / 6, 50 / 6, 50 / 6, 50 / 6, 50 / 6, 50 / 6, 50],
             rotation: 90,
-            text: ['8-9', '6-7', '4-5', '2-3', '1-2', '0-1', ''],
+            text: ['8-9', '6-7', '4-5', '2-3', '1-2', '0-1', ''], // Adjust the text to match the range of the data
             textinfo: 'text',
             textposition: 'inside',
             marker: {
