@@ -66,9 +66,10 @@ In addition to using the resources listed above, the author acquired query respo
 
 The author also consulted code and results from similar projects publicly accessible in [GitHub](https://github.com/) repositories and recoverable through [Google](https://www.google.com/) and comparable search engines:
 
+- [Larson, Mychele](https://www.linkedin.com/in/mychele-larson/): Austin, Texas, USA, March 2023. [Belly-Button-Challenge](https://github.com/mychele-larson/Belly-Button-Challenge)
 - [Tallant, Jeremy](https://www.linkedin.com/in/jeremy-tallant-717075220/): San Antonio, Texas, USA, February 2023. [belly-button-challenge](https://github.com/JeremyTallant/belly-button-challenge)
-- [Stegall-Rodriguez, Sarah](https://www.linkedin.com/in/sarsteg/): Brownsville, Texas, USA, June 2023. [nosql-challenge](https://github.com/sarsteg/nosql-challenge)
-- [Wang, Yeyan](https://www.linkedin.com/in/yeyan-wang/): Seattle, Washington, USA, March 2023. [nosql-challenge](https://github.com/yeyanwang/nosql-challenge)
+- [Wang, Yeyan](https://www.linkedin.com/in/yeyan-wang/): Seattle, Washington, USA, March 2023. [belly-button-challenge](https://github.com/yeyanwang/belly-button-challenge)
+- [Zhaksylyk, Madina](https://www.linkedin.com/in/madinazh/): Minneapolis, Minnesota, USA, January 2023. [Belly-Button-Challenge](https://github.com/madinalikes/Belly-Button-Challenge)
 
 The experimental data for this assignment ultimately derives from this study:
 
