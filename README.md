@@ -62,7 +62,7 @@ In addition to being able to scroll over the bars and bubbles to get microbe dat
 
 ### 4. ACKNOWLEDGEMENTS
 
-In addition to using the resources listed above, the author acquired query responses in OpenAI's [ChatGPT](https://chat.openai.com/) 3.5 and 4.0 platforms, and the [VSCode GitHub Copilot](https://github.com/features/copilot) app V1.
+In addition to using the resources listed above, the author acquired query responses in OpenAI's [ChatGPT](https://chat.openai.com/) 3.5 and 4 platforms, and the [VSCode GitHub Copilot](https://github.com/features/copilot) app V1.
 
 The author also consulted code and results from similar projects publicly accessible in [GitHub](https://github.com/) repositories and recoverable through [Google](https://www.google.com/) and comparable search engines:
 
