@@ -47,7 +47,7 @@ In addition to being able to scroll over the bars and bubbles to get microbe dat
 
 ![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/ba96056f-4972-4e69-bb6a-46697148047b)
 
-**Figure 5** | *Gauge of binned washing frequency from each sample's metadata*
+**Figure 5** | *Portion of JavaScript code that updates all elements of the dashboard whenever a new individual's number is selected in the dropdown menu*
 
 ### 2. INSTALLATION
 
