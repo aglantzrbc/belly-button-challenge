@@ -13,7 +13,7 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 14 Belly Butt
 
 ### 1. PROJECT DESCRIPTION
 
-This [project](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) is designed to assess student skills using [JavaScript](https://www.javascript.com/) alongside other web language to construct an interactive dashboard. The project is based upon a study of the microbes that colonize the human navel. The original study materials are available [here](https://robdunnlab.com/projects/belly-button-biodiversity/) and [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712), and the citation is at the end of this README file. The study's dataset reveals that a small handful of microbial species (also called _operational taxonomic units_, or OTUs) were present in more than 70% of people, while the rest were relatively rare. *Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle*.
+This [project](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) is designed to assess student skills using [JavaScript](https://www.javascript.com/) alongside other web language to construct an interactive dashboard. The project is based upon a study of the microbes that colonize the human navel. The original study materials are available [here](https://robdunnlab.com/projects/belly-button-biodiversity/) and [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712), and the citation is at the end of this README file. Using a sample of individuals' navel microbes, the study's dataset reveals that a small handful of microbial species (also called _operational taxonomic units_, or OTUs) were present in more than 70% of people, while the rest were relatively rare. *Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle*.
 
 The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for the dashboard and the JavaScript file provides interactivity. The legend of files is as follows:
 
@@ -21,27 +21,27 @@ The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for t
 
 **JAVASCRIPT FILE:** app.js
 
-The HTML file creates a dropdown menu of OTU IDs. Using the [d3](https://d3js.org/) library accessed in the HTML, the JavaScript file gives the dropdown access to the json data in the source file: _"https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time a sample individual is selected by number via the dropdown menu, metadata associated with it populates a box of demographic information key pairs right underneath. See **Figure 1**.
+The HTML file creates a **dropdown menu** of OTU IDs. Using the [d3](https://d3js.org/) library accessed in the HTML, the JavaScript file gives the dropdown menu access to the json data in the source file: _"https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time a sample individual is selected by number via the dropdown menu, metadata associated with it populates a **box of demographic information key pairs** right underneath the menu. A CSS stylesheet made accessible through the HTML code provided aesthetic elements for these items and the others listed below. See **Figure 1**.
 
 ![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/6c68dcb4-2eba-42dc-ba83-8cc626140436)
 
 **Figure 1** | *HTML dropdown menu and JavaScript metadata box of demographic information key pairs*
 
-Calling the [Plotly](https://plotly.com/javascript/) library, which is built on top of the d3 library and also made available through the HTML code, a bar chart (**Figure 2**) and a bubble chart (**Figure 3**) were constructed. Mousing over each bar and each bubble gives access to the OTU information associated with each sample's microbes
+Calling the [Plotly](https://plotly.com/javascript/) library, which is built on top of the d3 library and also made available through the HTML code, a **bar chart** (**Figure 2**) and a **bubble chart** (**Figure 3**) were constructed, each showing the top ten microbes by volume. Mousing over each bar and each bubble gives access to the OTU information associated with each sample individual's microbes
 
 ![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/f5f923ee-2e60-494c-8d8c-451bd2bb3e13)
 
-**Figure 2** | *Bar chart of each sample's microbes*
+**Figure 2** | *Bar chart of each sample individual's top ten microbes by volume*
 
 ![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/a40bdaa0-c452-4f2c-a446-055f6b70a7af)
 
-**Figure 3** | *Bubble chart of each sample's microbes*
+**Figure 3** | *Bubble chart of each sample individual's top ten microbes by volume*
 
-As an optional item, a gauge was created with a pointer indicating the binned wash frequency from the metadata of the sample. This is illustrated in **Figure 4**.
+As an optional visual aid, a **gauge** was created with a red pointer indicating the binned navel washing frequency from the metadata of the sample. This is illustrated in **Figure 4**.
 
 ![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/a25f4b02-a8ed-4cae-9ccf-d5f6ca33278d)
 
-**Figure 4** | *Gauge of binned washing frequency from each sample's metadata*
+**Figure 4** | *Gauge of binned navel washing frequency from each sample individual's metadata*
 
 In addition to being able to scroll over the bars and bubbles to get microbe data, the dashboard is interactive in the sense that whenever the user selects a new sample individual's number from the dropdown menu, the entire dashboard updates with that person's information. See **Figure 5** for some of the JavaScript code that makes this possible.
 
@@ -51,7 +51,7 @@ In addition to being able to scroll over the bars and bubbles to get microbe dat
 
 ### 2. INSTALLATION
 
-- The [GitHub repository](https://github.com/aglantzrbc/belly-button-challenge) (version 2.9.1) containing all project files is publicly accessible.
+- The [GitHub](https://github.com/aglantzrbc/belly-button-challenge) repository (version 2.9.1) containing all project files is publicly accessible.
 - Both the constituent files listed above are in the the same location. **If this relative placement is altered, the code won't run.**
 - The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 14 Belly Button Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) webpage.
 - The latest versions of the coding languages are [HTML5](https://en.wikipedia.org/wiki/HTML5) and [JavaScript ES13](https://codingbeautydev.com/blog/es13-javascript-features/).
@@ -62,7 +62,7 @@ In addition to being able to scroll over the bars and bubbles to get microbe dat
 
 ### 4. ACKNOWLEDGEMENTS
 
-In addition to using the resources listed above, the author acquired query responses in OpenAI's [ChatGPT](https://chat.openai.com/) 3.5 platform and the [VSCode GitHub Copilot](https://github.com/features/copilot) app V1.
+In addition to using the resources listed above, the author acquired query responses in OpenAI's [ChatGPT](https://chat.openai.com/) 3.5 and 4.0 platforms, and the [VSCode GitHub Copilot](https://github.com/features/copilot) app V1.
 
 The author also consulted code and results from similar projects publicly accessible in [GitHub](https://github.com/) repositories and recoverable through [Google](https://www.google.com/) and comparable search engines:
 
