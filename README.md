@@ -21,7 +21,7 @@ The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for t
 
 **JAVASCRIPT FILE:** app.js
 
-The HTML file creates a **dropdown menu** of OTU IDs. Using the [d3](https://d3js.org/) library accessed in the HTML, the JavaScript file gives the dropdown menu access to the json data in the source file: _"https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time a sample individual is selected by number via the dropdown menu, metadata associated with it populates a **box of demographic information key pairs** right underneath the menu. A CSS stylesheet made accessible through the HTML code provided aesthetic elements for these items and the others listed below. See **Figure 1**.
+The HTML file creates a **dropdown menu** of OTU IDs. Using the [d3](https://d3js.org/) library accessed in the HTML, the JavaScript file gives the dropdown menu access to the json data in the source file: _https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time a sample individual is selected by number via the dropdown menu, metadata associated with it populates a **box of demographic information key pairs** right underneath the menu. A CSS stylesheet made accessible through the HTML code provided aesthetic elements for these items and the others listed below. See **Figure 1**.
 
 ![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/6c68dcb4-2eba-42dc-ba83-8cc626140436)
 
