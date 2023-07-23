@@ -51,18 +51,10 @@ In addition to being able to scroll over the bars and bubbles to get microbe dat
 
 ### 2. INSTALLATION
 
-- The file for *Database and Jupyter Notebook Set Up* and *Update the Database* tasks 1 & 2: **NoSQL_setup_1-2.ipynb**
-- The file for *Exploratory Analysis* task 3: **NoSQL_analysis_3.ipynb**
-
-- The [GitHub repository](https://github.com/aglantzrbc/nosql-challenge/tree/main) (version 2.9.1) containing all project files is publicly accessible.
-- The *Resources* subdirectory contains the *establishments.json* source file requested by the instructions. It is located in the same place as the code files. **If this relative placement is altered, the code won't run.**
-- As mentioned above, before starting to run the code, the user needs to install recent versions of MongoDB and Mongo Database Tools, and then run this code in a Git Bash terminal in the same subdirectory as the .json source file: *mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json*. **If this isn't done, the code won't run.**
-- It is intended for the user to run all of the *NoSQL_setup_1-2.ipynb* code and then, without a new mongoimport attempt, run the *NoSQL_analysis_3.ipynb* code, because the latter file's processes build upon accomplishments from the former. **If this sequence isn't adhered to or a new mongoimport command intervenes between running the two code files, the user may get different outputs than shown here and/or encounter errors.**
-- Since certain code blocks make changes to the collection, rerunning "before and after" scenario code may lose the distinction that makes these processes worthwhile as a check. **Only run the code once.**
-
-- The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 12 NoSQL Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54004?module_item_id=961459) webpage.
-- Both source files use Python version 3.10.9. The project was coded in [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/) version 6.5.2. The *mongoimport* command was run in [Git Bash](https://git-scm.com/downloads) version 2.40.0.windows.1. The latest stable version of [Git](https://en.wikipedia.org/wiki/Git) itself is 2.41.
-- The NoSQL database used here is MongoDB 6.0. The author also used *mongoimport* from [Mongo Database Tools](https://www.mongodb.com/docs/database-tools/) for Windows x86_64-100.7.3, the [Mongosh](https://www.mongodb.com/docs/mongodb-shell/) Shell 1.10.1-win32-x64, and the GUI app [MongoDBCompass](https://www.mongodb.com/products/compass) 1.38.2.
+- The [GitHub repository](https://github.com/aglantzrbc/belly-button-challenge) (version 2.9.1) containing all project files is publicly accessible.
+- Both the constituent files listed above are in the the same location. **If this relative placement is altered, the code won't run.**
+- The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 14 Belly Button Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) webpage.
+- The latest versions of the coding languages are [HTML5](https://en.wikipedia.org/wiki/HTML5) and [JavaScript ES13](https://codingbeautydev.com/blog/es13-javascript-features/).
 
 ### 3. CONTRIBUTING
 
